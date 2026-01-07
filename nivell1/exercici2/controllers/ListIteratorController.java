@@ -5,7 +5,7 @@ import exercici2.model.NumberList;
 import java.util.ListIterator;
 
 public class ListIteratorController {
-    private NumberList numberList, reversedNumberList;
+    private final NumberList numberList, reversedNumberList;
 
     public ListIteratorController() {
         this.numberList = new NumberList();
