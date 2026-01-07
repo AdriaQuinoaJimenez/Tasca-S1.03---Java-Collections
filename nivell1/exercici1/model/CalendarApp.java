@@ -1,5 +1,8 @@
 package exercici1.model;
 
+import java.util.HashSet;
+import java.util.Iterator;
+
 public class CalendarApp {
 
     private Year year;
@@ -13,9 +16,9 @@ public class CalendarApp {
         year.addMonthPosition(7, new Month("August"));
         showList();
 
+        HashSet<Month> monthsSet = new HashSet<>(year.getMonths());
+        showHashSet(monthsSet);
     }
-
-
 
     public void addMonths(){
         year.addMonth(new Month("January"));
@@ -33,5 +36,14 @@ public class CalendarApp {
 
     public void showList(){
         System.out.println(year.getMonths());
+    }
+
+    public void showHashSet(HashSet<Month> monthsSet){
+
+        Iterator<Month> iterator = monthsSet.iterator();
+        while(iterator.hasNext()){
+            Month month = iterator.next();
+            System.out.println(month);
+        }
     }
 }
