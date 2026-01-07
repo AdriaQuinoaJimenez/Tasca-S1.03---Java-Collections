@@ -10,10 +10,12 @@ public class CalendarApp {
 
     public void run(){
         addMonths();
-        addAugust();
+        year.addMonthPosition(7, new Month("August"));
         showList();
 
     }
+
+
 
     public void addMonths(){
         year.addMonth(new Month("January"));
@@ -27,10 +29,6 @@ public class CalendarApp {
         year.addMonth(new Month("October"));
         year.addMonth(new Month("November"));
         year.addMonth(new Month("December"));
-    }
-
-    public void addAugust(){
-        year.addMonth(new Month("August"));
     }
 
     public void showList(){

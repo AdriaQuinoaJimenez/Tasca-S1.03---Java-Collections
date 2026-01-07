@@ -14,6 +14,10 @@ public class Year {
         this.months.add(month);
     }
 
+    public void addMonthPosition(int index, Month month) {
+        this.months.add(index, month);
+    }
+
     public ArrayList<Month> getMonths() {
         return this.months;
     }
