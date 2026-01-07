@@ -17,7 +17,9 @@ public class CalendarApp {
         showList();
 
         HashSet<Month> monthsSet = new HashSet<>(year.getMonths());
+        addRepeatedMonth(monthsSet);
         showHashSet(monthsSet);
+
     }
 
     public void addMonths(){
@@ -41,9 +43,25 @@ public class CalendarApp {
     public void showHashSet(HashSet<Month> monthsSet){
 
         Iterator<Month> iterator = monthsSet.iterator();
+        System.out.println("Recorregut amb Iterator: ");
         while(iterator.hasNext()){
             Month month = iterator.next();
             System.out.println(month);
+        }
+
+        System.out.println("Recorregut amb for-each");
+        for(Month month : monthsSet){
+            System.out.println(month);
+        }
+
+    }
+
+    public void addRepeatedMonth(HashSet<Month> monthsSet){
+        boolean monthRepeated = monthsSet.add(new Month("January"));
+        if(!monthRepeated){
+            System.out.println("El nou mes esta repetit");
+        }else{
+            System.out.println("El nou mes no esta repetit");
         }
     }
 }
