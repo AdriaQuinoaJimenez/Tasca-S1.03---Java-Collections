@@ -1,13 +1,15 @@
-package exercici1.model;
+package exercici1.controllers;
+
+import exercici1.model.Month;
+import exercici1.model.Year;
 
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class CalendarApp {
-
+public class CalendarController {
     private Year year;
 
-    public CalendarApp() {
+    public CalendarController() {
         this.year = new Year();
     }
 
@@ -46,12 +48,12 @@ public class CalendarApp {
         System.out.println("Recorregut amb Iterator: ");
         while(iterator.hasNext()){
             Month month = iterator.next();
-            System.out.println(month);
+            System.out.print(month + " | ");
         }
 
-        System.out.println("Recorregut amb for-each");
+        System.out.println("\nRecorregut amb for-each");
         for(Month month : monthsSet){
-            System.out.println(month);
+            System.out.print(month + " | ");
         }
 
     }
