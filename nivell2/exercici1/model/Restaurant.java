@@ -12,6 +12,14 @@ public class Restaurant {
     }
 
     @Override
+    public String toString() {
+        return "Restaurant{" +
+                "nom='" + nom + '\'' +
+                ", puntuacio=" + puntuacio +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Restaurant that = (Restaurant) o;

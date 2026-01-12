@@ -12,19 +12,16 @@ public class RestaurantApp {
     }
 
     public void run(){
-        addRestaurant(new Restaurant("Messi", 10));
-        toString();
+        addRestaurant(new Restaurant("Pizzeria", 10));
+        addRestaurant(new Restaurant("Hamburgueseria", 20));
+        addRestaurant(new Restaurant("Hamburgueseria", 20));
+        addRestaurant(new Restaurant("Hamburgueseria", 30));
+        addRestaurant(new Restaurant("Restaurant", 10));
+        System.out.println(restaurants);
 
     }
 
     public void addRestaurant(Restaurant restaurant) {
         this.restaurants.add(restaurant);
-    }
-
-    @Override
-    public String toString() {
-        return "RestaurantApp{" +
-                "restaurants=" + restaurants +
-                '}';
     }
 }

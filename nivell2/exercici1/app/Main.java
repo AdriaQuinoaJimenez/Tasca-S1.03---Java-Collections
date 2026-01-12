@@ -7,5 +7,6 @@ public class Main {
 
         RestaurantApp app = new RestaurantApp();
         app.run();
+
     }
 }
