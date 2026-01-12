@@ -1,6 +1,6 @@
-package exercici2.controllers;
+package nivell1.exercici2.controllers;
 
-import exercici2.model.NumberList;
+import nivell1.exercici2.model.NumberList;
 
 import java.util.ListIterator;
 

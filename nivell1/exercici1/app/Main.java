@@ -1,6 +1,6 @@
-package exercici1.app;
+package nivell1.exercici1.app;
 
-import exercici1.controllers.CalendarController;
+import nivell1.exercici1.controllers.CalendarController;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package exercici2.app;
+package nivell1.exercici2.app;
 
-import exercici2.controllers.ListIteratorController;
+import nivell1.exercici2.controllers.ListIteratorController;
 
 public class Main {
     public static void main(String[] args) {
